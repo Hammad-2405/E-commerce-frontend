@@ -19,7 +19,7 @@ const { data: session } = useSession();
     const buyerUsername = session.user.username; // Assuming you have session available
   
     try {
-      const response = await fetch('http://localhost:5000/api/order/checkout', {
+      const response = await fetch('e-commerce-website-production-ffa9.up.railway.app/api/order/checkout', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

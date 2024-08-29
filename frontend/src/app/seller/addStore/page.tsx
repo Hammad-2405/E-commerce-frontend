@@ -48,7 +48,7 @@ const AddStorePage: React.FC = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/user/addStore`, {
+      const response = await fetch(`e-commerce-website-production-ffa9.up.railway.app/api/user/addStore`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

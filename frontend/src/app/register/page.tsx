@@ -31,7 +31,7 @@ const RegisterPage: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await fetch(`http://localhost:5000/register`, {
+      const response = await fetch(`e-commerce-website-production-ffa9.up.railway.app/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

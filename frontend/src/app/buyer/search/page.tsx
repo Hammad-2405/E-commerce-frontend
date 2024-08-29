@@ -14,7 +14,7 @@ const SearchResults: React.FC = () => {
     const fetchSearchResults = async () => {
       if (query) {
         try {
-          const response = await fetch(`http://localhost:5000/api/product/search?query=${query}`);
+          const response = await fetch(`e-commerce-website-production-ffa9.up.railway.app/api/product/search?query=${query}`);
           const data = await response.json();
           
           console.log('Fetched Search Results:', data); // Debugging line

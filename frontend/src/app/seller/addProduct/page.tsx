@@ -45,7 +45,7 @@ const AddProductPage: React.FC = () => {
     productData.append('seller', session.user.username);
 
     try {
-      const response = await fetch('http://localhost:5000/api/product/addproduct', {
+      const response = await fetch('e-commerce-website-production-ffa9.up.railway.app/api/product/addproduct', {
         method: 'POST',
         body: productData,  // Send as FormData
       });

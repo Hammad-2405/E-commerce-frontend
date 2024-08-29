@@ -16,7 +16,7 @@ interface Product {
 
 const fetchProducts = async (username: string): Promise<Product[]> => {
   try {
-    const response = await fetch(`http://localhost:5000/api/product/viewProducts/${username}`); // Use relative URL
+    const response = await fetch(`e-commerce-website-production-ffa9.up.railway.app/api/product/viewProducts/${username}`); // Use relative URL
     if (!response.ok) {
       throw new Error('Failed to fetch products');
     }
@@ -31,7 +31,7 @@ const fetchProducts = async (username: string): Promise<Product[]> => {
 
 const checkStore = async (username: string): Promise<boolean> => {
     try {
-      const response = await fetch(`http://localhost:5000/api/user/checkstore/${username}`);
+      const response = await fetch(`e-commerce-website-production-ffa9.up.railway.app/api/user/checkstore/${username}`);
       const data = await response.json();
       return data.hasStore;
     } catch (error) {

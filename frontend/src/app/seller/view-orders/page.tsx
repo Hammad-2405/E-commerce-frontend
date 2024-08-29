@@ -22,7 +22,7 @@ const ViewOrders: React.FC = () => {
     const fetchOrders = async () => {
       if (session?.user?.username) {
         try {
-          const response = await fetch(`http://localhost:5000/api/order/viewSellerOrders/${session.user.username}`);
+          const response = await fetch(`e-commerce-website-production-ffa9.up.railway.app/api/order/viewSellerOrders/${session.user.username}`);
           if (!response.ok) {
             throw new Error('Failed to fetch orders');
           }

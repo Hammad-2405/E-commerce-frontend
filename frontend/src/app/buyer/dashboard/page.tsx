@@ -18,7 +18,7 @@ const BuyerDashboard: React.FC = () => {
     // Fetch random products on page load
     const fetchRandomProducts = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/product/randomProducts');
+        const response = await fetch('e-commerce-website-production-ffa9.up.railway.app/api/product/randomProducts');
         const data = await response.json();
         setProducts(data);
       } catch (error) {
